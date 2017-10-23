@@ -1,0 +1,440 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+.container {
+    width: 1160px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+
+}
+
+/*********** TOP NAV ************/
+
+#cart-bar {
+    background-color:#0B486B;
+    font-size: 14px;
+    color: white;
+    text-align: right;
+    height: 40px;
+}
+
+#cart-bar li {
+    display: inline;
+}
+
+#cart-bar a {
+    color:white;
+}
+
+#cart-bar li:not(:last-child) {
+    padding-right: 50px;
+}
+
+#cart-bar-display {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#cart-bar-links img {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+#cart-bar-links ul {
+    margin: 0;
+
+}
+
+#main-nav {
+    height: 120px;
+    background-color:#DEF6B9;
+    padding: 0px;
+}
+
+#main-nav li {
+    display: inline;
+
+}
+
+#main-nav a {
+    color: #522923;
+}
+
+#navbar {
+  display: flex;
+}
+#navbar > div {
+  flex: 1; /*grow*/
+}
+
+#nav-links {
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-left: 0;
+}
+
+#nav-links li:not(:last-child) {
+  padding-right: 90px;
+}
+
+
+#search {
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-left: 0;
+}
+
+#search input {
+    width: 260px;
+    height: 35px;
+    float: right;
+}
+
+/*********** CONTENT ************/
+
+#content, #item1 > a {
+    
+    color: #212121;
+    
+}
+
+div#content {
+    margin-top: 20px;
+}
+
+#hero-image {
+    margin-bottom: 40px;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    width: 100%;
+
+}
+
+#best-sellers > div {
+    width: 1160px;
+}
+
+#item-description a {
+
+}
+
+#items > div{
+    border: 1px solid gray;
+    width: 260px;
+    height: 340px;
+    margin: auto;
+}
+
+.item-img {
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+
+}
+.item-img > img, .item-img > a {
+    max-width: 100%;
+    height: auto;
+}
+
+div.item-description  {
+    display: inline-block;
+    margin-left: 20px;
+    width: 200px;
+}
+
+.item-description p {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+}
+
+/*********** PRODUCTS PAGE ************/
+
+div.categories-column, div.items-display {
+    display: inline-block;
+}
+
+div.categories-column {
+    width: 260px;
+    vertical-align: top;
+}
+
+div.items-display {
+   width: 895px;
+   margin-bottom: 50px;
+}
+
+div#categories {
+    margin-top: 50px;
+}
+
+#categories p {
+    margin-left: 20px;
+}
+
+#sort-by {
+    float: right;
+    margin-top: 45px;
+    margin-bottom: 65px;
+    /*display: block;*/
+}
+
+div.product {
+    margin-bottom: 20px;
+}
+
+div#item1 {
+    margin-left: 0px;
+}
+
+#last-item {
+    width: 260px;
+    border: 1px solid gray;
+}
+
+#color-select {
+    margin-right: 35px;
+}
+
+
+/*********** PRODUCT DETAIL ************/
+
+#thumbnails, #main-image, #product-select {
+    display: inline-block;
+    vertical-align:top;
+    margin-top: 50px;
+}
+
+div#thumbnails {
+    width: 105px;
+    margin-right: 35px;
+}
+
+#thumbnails img {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+#main-image img {
+    width: 500px;
+    height: auto;
+}
+
+#main-image {
+    margin-right: 90px;
+}
+
+#price {
+    font-size: 30px;
+    margin: 0 0 30px 0;
+}
+
+#detail-select > p {
+    margin-bottom: 0px;
+}
+
+#product-select h2{
+    margin-bottom: 20px;
+}
+
+#colors {
+    margin-top: 7px;
+}
+
+.button {
+    background-color: #02AAE7; /* Blue */
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 15px 120px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#description, #size {
+    display: inline-block;
+    vertical-align:top;
+    margin-top: 60px;
+}
+
+#description p {
+    line-height: 24px;
+    width: 700px;
+    
+}
+
+#size {
+    width: 300px;
+    float: right;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+
+/*********** FOOTER ************/
+
+#footer {
+    padding: 5px;
+    background-color:#0B486B;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 200px;
+}
+
+#footer a {
+    color:white;
+    font-size: 16px
+}
+
+#footer-nav {
+  display: flex;
+}
+#footer-nav > div {
+  flex: 1; /*grow*/
+}
+
+#footer-nav-links li {
+    padding-bottom: 5px;
+}
+
+#copyright {
+    display: block;
+}
+
+/*********** GENERAL STYLINGS ************/
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 40;
+
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 30;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 16px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+.center{ text-align: center; }
+
+/*********** LISTING CART ************/
+
+
+#listing, #listing th, #listing td{
+	border: 0;
+}
+
+#listing th{
+	font-weight: normal;
+	border-bottom: 2px solid #CCCCCC;
+}
+
+#listing td{
+	border-bottom: 1px solid #000000;
+}
+
+#listing{
+	width: 100%;
+}
+
+#listing td{
+	line-height: 2em;
+}
+
+#listing td img{
+	width: 100px;
+}
+
+#listing .qty{
+	padding: 10px 15px;
+	border: 1px solid #999999;
+}

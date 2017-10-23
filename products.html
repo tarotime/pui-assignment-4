@@ -8,7 +8,7 @@
    <!-- javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
-  
+
   <body>
     <!-- Cart bar -->
     <div id="cart-bar">
@@ -51,14 +51,30 @@
     <!-- Content -->
   	<div id="content">
       <div class="container" id="main-content">
-        <div id="hero-image">
-          <img src="images/Hero.png">
+
+        <div class="categories-column">
+          <h1>All Products</h1>
+          
+          <div id="categories">
+          <h4>Categories</h4> 
+          <p>Harnesses</p>
+          <p>Food & Water Storage</p>
+          <p>Collars</p>
+          </div>
+
         </div>
 
-        <div id="best-sellers">
-          <h2>Best Sellers</h2>
-          
-          <div id="items"> <!-- Items container -->
+      <div class="items-display">
+        <!-- <div id="sort-by"> -->
+          <select id="sort-by">
+            <option>Sort by: Best Sellers</option>
+            <option>Sort by: Low to High</option>
+            <option>Sort by: High to Low</option>
+            <option>Sort by: Recent</option>
+          </select>
+        <!-- </div> -->
+
+      <div id="items"> <!-- Items container -->
 
             <a href="dog_harness.html">
             <div class="product" id="item1">
@@ -91,6 +107,9 @@
               </div>
             </div>
 
+        </div> <!-- End items div -->
+
+        <div id="last-item">
             <div class="product" id="item4">
               <div class="item-img">
                 <img src="images/collar.jpg" alt="gps collar">
@@ -101,12 +120,14 @@
               </div>
             </div>
 
-          </div>
-
         </div>
 
-  		</div>
-  	</div>
+
+
+      </div> <!-- End items-display div -->
+
+  		</div> <!-- End content container div -->
+  	</div> <!-- End content div -->
 
     <!-- Footer -->
   	<div id="footer">
@@ -141,7 +162,7 @@
 
 
   	</div> <!-- End footer -->
-
+    
     <script src="js/shoppingCart.js" type="text/javascript"></script>
 
     <script type="text/javascript">
@@ -214,7 +235,6 @@
 
             displayCart();
     </script>
-
 
   </body>
 </html>
